@@ -1,12 +1,11 @@
 <h1>All Dogs</h1>
 
-
 <%= link_to "Sort Dogs", dogs_sort_path %>
 
 <ul>
-<% @dogs.each do |dog| %>
+    <% @dogs.each do |dog| %>
     <li>
-    <%= link_to dog.name, dog%>
+        <%= link_to dog.name, dog%>
     </li>
-<% end %>
+    <% end %>
 </ul>
